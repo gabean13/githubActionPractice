@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.SERVER_KEY }}
           port: ${{ secrets.SERVER_PORT }}
           source: "build/libs/*jar"  #빌드된 JAR 위치
-          target: "/"  #서버의 파일이 복사될 경로
+          target: "/home/potato/spring/"  #서버의 파일이 복사될 경로
 
       - name: Restart Spring Boot Application # 서버에서 애플리케이션 재시작
         uses: appleboy/ssh-action@master
