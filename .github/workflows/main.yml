@@ -32,7 +32,7 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           script: |
             if [ ! -d "/spring" ]; then
-                mkdir /spring
+                sudo mkdir /spring
             else
                 echo "/spring directory already exists."
             fi
