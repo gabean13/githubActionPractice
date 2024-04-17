@@ -43,4 +43,4 @@ jobs:
           # 재시작 스크립트
           script: |
             cd /home/potato/spring/build/libs
-            java -jar gabin-0.0.1-SNAPSHOT.jar 
+            /usr/lib/jdk-21.0.2/bin/java -jar gabin-0.0.1-SNAPSHOT.jar 
